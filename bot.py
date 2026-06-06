@@ -428,7 +428,7 @@ class LiveTrader:
             "secret":  api_secret,
             "options": {"defaultType": "future"},
         })
-        self._exchange.options["fetchCurrencies"] = False  # skip geo-blocked private endpoint
+        self._exchange.has["fetchCurrencies"] = False  # skip geo-blocked private endpoint
         self._exchange.load_markets()
 
     # ── Exchange helpers ──────────────────────────────────────────────────────

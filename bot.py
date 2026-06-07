@@ -673,7 +673,7 @@ paper_trader: PaperTrader | LiveTrader = LiveTrader() if config.LIVE_TRADING els
 def _run_live_bot():
     """Live-mode tick: monitor open futures positions, then scan for entries."""
     now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
-    print(f"\n{'─'*55}")
+    print(f"\n{'-'*55}")
     print(f"[live] Running at {now}")
 
     try:
@@ -803,7 +803,7 @@ def run_bot():
         return
 
     now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
-    print(f"\n{'─'*55}")
+    print(f"\n{'-'*55}")
     print(f"[bot] Running at {now}")
 
     try:
